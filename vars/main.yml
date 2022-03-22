@@ -1,0 +1,4 @@
+---
+# vars file for ansible-oracle-client
+gs_access_key: ""
+gs_secret_key: ""

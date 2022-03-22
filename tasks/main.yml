@@ -1,0 +1,30 @@
+---
+- name: Install Python packages.
+  pip:
+    name: "{{ packages }}"
+  vars:
+    packages:
+      - boto
+    state: present
+
+# tasks file for ansible-oracle-client
+- name: Download and extract
+  ansible.builtin.unarchive:
+    src: "{{ url_client_installer }}"
+    dest: ./
+    remote_src: yes
+
+# - name: Rename dir
+#   shell: mv instantclient_21_5 oracle_client
+
+# - name: Upload Oracle Client
+#   gc_storage:
+#     bucket: "{{ gcs_bucket }}"
+#     object: /data/oracle_client/README
+#     src: ./instantclient_21_5/network/admin/README
+#     mode: put
+#     gs_access_key: "{{ gs_access_key }}"
+#     gs_secret_key: "{{ gs_secret_key }}"
+
+- name: Upload Oracle Client
+  shell: gsutil -m cp -r ./{{ client_folder }}/ gs://{{ gcs_bucket }}/data/oracle_client-test
