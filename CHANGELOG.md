@@ -1,3 +1,11 @@
+## [1.0.1](https://github.com/bydefault-cl/ansible-oracle-client/compare/v1.0.0...v1.0.1) (2022-03-22)
+
+
+### Bug Fixes
+
+* **ansible:** update destination folder con gcs ([7a9606a](https://github.com/bydefault-cl/ansible-oracle-client/commit/7a9606ac8b0fe7560d36cf37d5d10707fa320e54))
+* **ci:** update Changelog ([ebb98c4](https://github.com/bydefault-cl/ansible-oracle-client/commit/ebb98c49897ba5002d60577417eba988f40ab7ca))
+
 # 1.0.0 (2022-03-22)
 
 
