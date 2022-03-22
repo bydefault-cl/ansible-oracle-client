@@ -27,4 +27,4 @@
 #     gs_secret_key: "{{ gs_secret_key }}"
 
 - name: Upload Oracle Client
-  shell: gsutil -m cp -r ./{{ client_folder }}/ gs://{{ gcs_bucket }}/data/oracle_client-test
+  shell: gsutil -m cp -r ./{{ client_folder }}/ gs://{{ gcs_bucket }}/data/oracle_client
