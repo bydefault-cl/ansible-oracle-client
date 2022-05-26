@@ -9,6 +9,7 @@
 
 - name: Clear existent Oracle Client folder
   shell: gsutil -m rm -r gs://{{ gcs_bucket }}/data/oracle_client
+  ignore_errors: yes
 
 # tasks file for ansible-oracle-client
 - name: Download and extract
@@ -17,17 +18,17 @@
     dest: ./
     remote_src: yes
 
-- name: Create a directory if it does not exist
+- name: Create lib directory
   ansible.builtin.file:
     path: ./lib
     state: directory
     mode: '0755'
   
 
-- name: Create a recursive symbolic link
+- name: Create a symbolic link libclntsh.so
   ansible.builtin.file:
-    src: ./
-    dest: ./lib/
+    src: ./libclntsh.so
+    dest: ./lib/libclntsh.so
     state: link
 
 # - name: Rename dir
