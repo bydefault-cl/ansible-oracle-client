@@ -20,7 +20,7 @@
 
 - name: Create lib directory
   ansible.builtin.file:
-    path: ./lib
+    path: ./{{ client_folder }}/lib
     state: directory
     mode: '0755'
 
