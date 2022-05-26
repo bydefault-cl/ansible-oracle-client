@@ -24,11 +24,12 @@
     state: directory
     mode: '0755'
 
-# - name: Create a symbolic link libclntsh.so
-#   ansible.builtin.file:
-#     src: libclntsh.so
-#     dest: ./lib/libclntsh.so
-#     state: link
+- name: Create a symbolic link libclntsh.so
+  ansible.builtin.file:
+    src: ../libclntsh.so
+    dest: ./{{ client_folder }}/lib/libclntsh.so
+    state: link
+    force: yes
 
 # - name: Rename dir
 #   shell: mv instantclient_21_5 oracle_client

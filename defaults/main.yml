@@ -1,6 +1,6 @@
 ---
 # defaults file for ansible-oracle-client
-oracle_version: "21.5.0.0.0"
+oracle_version: "19.15.0.0.0"
 gcs_bucket: "foo"
-url_client_installer: "https://download.oracle.com/otn_software/linux/instantclient/215000/instantclient-basic-linux.x64-21.5.0.0.0dbru.zip"
-client_folder: "instantclient_21_5"
+url_client_installer: "https://download.oracle.com/otn_software/linux/instantclient/1915000/instantclient-basic-linux.x64-19.15.0.0.0dbru.zip"
+client_folder: "instantclient_19_15"
