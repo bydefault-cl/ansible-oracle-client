@@ -1,3 +1,10 @@
+## [1.0.7](https://github.com/bydefault-cl/ansible-oracle-client/compare/v1.0.6...v1.0.7) (2022-05-26)
+
+
+### Bug Fixes
+
+* **ansible:** fix path symlink. Fix lib folder tasks. Update default vars ([49105e3](https://github.com/bydefault-cl/ansible-oracle-client/commit/49105e3d91616637cd9dd0282f81011a73712ec4))
+
 ## [1.0.6](https://github.com/bydefault-cl/ansible-oracle-client/compare/v1.0.5...v1.0.6) (2022-05-26)
 
 
