@@ -1,3 +1,10 @@
+## [1.0.8](https://github.com/bydefault-cl/ansible-oracle-client/compare/v1.0.7...v1.0.8) (2022-05-26)
+
+
+### Bug Fixes
+
+* **ansible:** add libnnz19.so symlink ([bf7a355](https://github.com/bydefault-cl/ansible-oracle-client/commit/bf7a3550fd96e31fcfa124fcd39083f6d3ac6074))
+
 ## [1.0.7](https://github.com/bydefault-cl/ansible-oracle-client/compare/v1.0.6...v1.0.7) (2022-05-26)
 
 
