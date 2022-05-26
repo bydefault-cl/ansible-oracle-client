@@ -7,12 +7,28 @@
       - boto
     state: present
 
+- name: Clear existent Oracle Client folder
+  shell: gsutil -m rm -r gs://{{ gcs_bucket }}/data/oracle_client
+
 # tasks file for ansible-oracle-client
 - name: Download and extract
   ansible.builtin.unarchive:
     src: "{{ url_client_installer }}"
     dest: ./
     remote_src: yes
+
+- name: Create a directory if it does not exist
+  ansible.builtin.file:
+    path: ./lib
+    state: directory
+    mode: '0755'
+  
+
+- name: Create a recursive symbolic link
+  ansible.builtin.file:
+    src: ./
+    dest: ./lib/
+    state: link
 
 # - name: Rename dir
 #   shell: mv instantclient_21_5 oracle_client
