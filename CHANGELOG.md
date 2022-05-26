@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/bydefault-cl/ansible-oracle-client/compare/v1.0.2...v1.0.3) (2022-05-26)
+
+
+### Bug Fixes
+
+* **ansible:** fix symlink. add ignore_errors on clear stage ([f90e2d9](https://github.com/bydefault-cl/ansible-oracle-client/commit/f90e2d97d091838f79e2af048087ab17d77853ee))
+
 ## [1.0.2](https://github.com/bydefault-cl/ansible-oracle-client/compare/v1.0.1...v1.0.2) (2022-05-26)
 
 
