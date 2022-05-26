@@ -27,7 +27,7 @@
 
 - name: Create a symbolic link libclntsh.so
   ansible.builtin.file:
-    src: ./libclntsh.so
+    src: libclntsh.so
     dest: ./lib/libclntsh.so
     state: link
 
