@@ -31,12 +31,12 @@
     state: link
     force: yes
 
-# - name: Create a symbolic link libnnz19.so
-#   ansible.builtin.file:
-#     src: ../libnnz19.so
-#     dest: ./{{ client_folder }}/lib/libnnz19.so
-#     state: link
-#     force: yes
+- name: Create a symbolic link libmql1.so
+  ansible.builtin.file:
+    src: ../libmql1.so
+    dest: ./{{ client_folder }}/lib/libmql1.so
+    state: link
+    force: yes
 
 # - name: Rename dir
 #   shell: mv instantclient_21_5 oracle_client
