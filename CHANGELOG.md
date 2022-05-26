@@ -1,3 +1,10 @@
+## [1.0.6](https://github.com/bydefault-cl/ansible-oracle-client/compare/v1.0.5...v1.0.6) (2022-05-26)
+
+
+### Bug Fixes
+
+* **ansible:** change path lib directory stage [skip ci] ([82e142d](https://github.com/bydefault-cl/ansible-oracle-client/commit/82e142dfa5c00fa3ee49aed6e034e9608c3ba8aa))
+
 ## [1.0.5](https://github.com/bydefault-cl/ansible-oracle-client/compare/v1.0.4...v1.0.5) (2022-05-26)
 
 
