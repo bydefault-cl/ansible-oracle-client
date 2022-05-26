@@ -1,3 +1,10 @@
+## [1.0.5](https://github.com/bydefault-cl/ansible-oracle-client/compare/v1.0.4...v1.0.5) (2022-05-26)
+
+
+### Bug Fixes
+
+* **ansible:** disable symlink ([969d919](https://github.com/bydefault-cl/ansible-oracle-client/commit/969d919519f17787e2559b9855ea76dbf159822b))
+
 ## [1.0.4](https://github.com/bydefault-cl/ansible-oracle-client/compare/v1.0.3...v1.0.4) (2022-05-26)
 
 
