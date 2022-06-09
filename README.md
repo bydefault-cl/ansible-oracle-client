@@ -1,7 +1,7 @@
-Role Name
-=========
+Oracle Client
+=============
 
-A brief description of the role goes here.
+Este rol permite la instalación del cliente Oracle dentro de una implementación de Composer 1.x o 2.x desplegado dentro del bucket generado durante la provisión del ambiente Composer.
 
 Requirements
 ------------
@@ -19,21 +19,49 @@ Any pre-requisites that may not be covered by Ansible itself or the role should 
 Role Variables
 --------------
 
-A description of the settable variables for this role should go here, including any variables that are in defaults/main.yml, vars/main.yml, and any variables that can/should be set via parameters to the role. Any variables that are read from other roles and/or the global scope (ie. hostvars, group vars, etc.) should be mentioned here as well.
+- Ruta del bucket donde se instalarán los archivos:
+
+```yml
+gcs_bucket: "foo"
+```
+
+- URL del archivo comprimido que contiene las librerías del cliente:
+
+```yml
+url_client_installer: "https://download.oracle.com/otn_software/linux/instantclient/185000/instantclient-basic-linux.x64-18.5.0.0.0dbru.zip"
+```
+
+- Versión del cliente:
+
+```yml
+client_folder: "instantclient_18_5"
+```
 
 Dependencies
 ------------
 
-A list of other roles hosted on Galaxy should go here, plus any details in regards to parameters that may need to be set for other roles, or variables that are used from other roles.
+Se requiere Composer desplegado y en particular el bucket asociado a este entorno.
 
 Example Playbook
 ----------------
 
 Including an example of how to use your role (for instance, with variables passed in as parameters) is always nice for users too:
 
-    - hosts: servers
-      roles:
-         - { role: username.rolename, x: 42 }
+```yml
+- hosts: localhost
+  remote_user: root
+  roles:
+  - ansible-oracle-client
+  vars:
+    gcs_bucket: "us-east1-emplipigas-datalak-5db2e7f9-bucket" # Se puede obtener la ruta como variable de entorno con (ejemplo) => "{{ lookup('env', 'GKE_BUCKET') }}"
+    url_client_installer: "https://download.oracle.com/otn_software/linux/instantclient/185000/instantclient-basic-linux.x64-18.5.0.0.0dbru.zip"
+    client_folder: "instantclient_18_5"
+```
+
+Test
+----
+
+ansible-playbook tests/test.yml -i tests/inventory
 
 License
 -------
@@ -43,8 +71,4 @@ BSD
 Author Information
 ------------------
 
-An optional section for the role authors to include contact information, or a website (HTML is not allowed).
-
-Test
-----
-ansible-playbook tests/test.yml -i tests/inventory
+Role creado para Lipigas por Marcelo Cárdenas (hackwish)
