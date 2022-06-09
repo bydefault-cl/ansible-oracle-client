@@ -1,3 +1,10 @@
+## [1.0.11](https://github.com/bydefault-cl/ansible-oracle-client/compare/v1.0.10...v1.0.11) (2022-06-09)
+
+
+### Bug Fixes
+
+* **readme:** update readme [skip ci] ([f60be9b](https://github.com/bydefault-cl/ansible-oracle-client/commit/f60be9beb30c6311a50ccd5c3bbfae12c709f523))
+
 ## [1.0.10](https://github.com/bydefault-cl/ansible-oracle-client/compare/v1.0.9...v1.0.10) (2022-05-26)
 
 
