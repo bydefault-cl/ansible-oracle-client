@@ -61,7 +61,9 @@ Including an example of how to use your role (for instance, with variables passe
 Test
 ----
 
+```sh
 ansible-playbook tests/test.yml -i tests/inventory
+```
 
 License
 -------
