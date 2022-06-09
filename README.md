@@ -71,4 +71,4 @@ BSD
 Author Information
 ------------------
 
-Role creado para Lipigas por Marcelo Cárdenas (hackwish)
+Role creado para Lipigas por Marcelo Cárdenas (hackwish).
